@@ -1,16 +1,16 @@
-package com.example.ganjoor.Api;
+package com.example.ganjoor.Internet;
 
 
 
-import com.example.ganjoor.Model.faal.Fal;
-import com.example.ganjoor.Model.poets.Poet;
+import com.example.ganjoor.Entity.faal.Fal;
+import com.example.ganjoor.Entity.poets.Poet;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface ApiServices {
+public interface Server {
 
     @GET("poets")
     Call<List<Poet>> getpoets();

@@ -1,4 +1,4 @@
-package com.example.ganjoor.Model.faal;
+package com.example.ganjoor.Entity.faal;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

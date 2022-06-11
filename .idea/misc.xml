@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_poets.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/rowlist.xml" value="0.25" />
       </map>
     </option>
   </component>

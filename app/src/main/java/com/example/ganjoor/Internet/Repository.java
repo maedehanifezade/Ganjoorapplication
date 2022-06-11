@@ -1,4 +1,4 @@
-package com.example.ganjoor.Api;
+package com.example.ganjoor.Internet;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -6,11 +6,11 @@ import com.google.gson.GsonBuilder;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofitConfig {
+public class Repository {
 
     private static Retrofit retrofit = null;
 
-    private RetrofitConfig() {
+    private Repository() {
     }
 
     public static Retrofit getApiclient() {

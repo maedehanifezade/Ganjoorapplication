@@ -1,4 +1,4 @@
-package com.example.ganjoor.Model.poets;
+package com.example.ganjoor.Entity.poets;
 
 
 

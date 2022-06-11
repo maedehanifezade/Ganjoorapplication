@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ganjoor.Api.ApiServices;
-import com.example.ganjoor.Api.RetrofitConfig;
-import com.example.ganjoor.Model.faal.Fal;
+import com.example.ganjoor.Internet.Server;
+import com.example.ganjoor.Internet.Repository;
+import com.example.ganjoor.Entity.faal.Fal;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -19,7 +18,7 @@ import retrofit2.Response;
 public class MainActivity2 extends AppCompatActivity {
 
 
-    ApiServices request;
+    Server request;
     TextView title, content ,again ,BACK;
     Call<Fal> call;
 
@@ -29,12 +28,13 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        setTitle("فال");
 
         title =findViewById(R.id.textView2);
         content =findViewById(R.id.textView3);
         again =findViewById(R.id.textView4);
         BACK =findViewById(R.id.textView5);
-        request = RetrofitConfig.getApiclient().create(ApiServices.class);
+        request = Repository.getApiclient().create(Server.class);
         call = request.getfaal();
         call.enqueue(new Callback<Fal>() {
             @Override
